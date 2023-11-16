@@ -9,3 +9,18 @@
 
 #### GraphQL
 - Single Endpoint > Getting all the data using single call.
+
+### How to fetch single review? Eg:
+1. Go to the Apollo Sandbox
+2. In the **Operation** window type below,
+`query ExampleQuery($id: ID!) {
+   review(id: $id) {
+     rating,
+     content
+   }
+}`
+3. If you want to fetch '1', you have to type below input in the **Variables** window
+`{
+   "id": "1"
+}`
+4. Then Run & Enjoy
