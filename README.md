@@ -9,4 +9,3 @@
 
 #### GraphQL
 - Single Endpoint > Getting all the data using single call.
-- 
