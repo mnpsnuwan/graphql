@@ -1,4 +1,4 @@
-![](./assets/images/GraphQL.png)
+![](./assets/images/graphql.png)
 
 # GraphQL
 - The GraphQL is a Query Language.
