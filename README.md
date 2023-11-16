@@ -32,14 +32,33 @@
 1. Go to the Apollo Sandbox
 2. In the **Operation** window type below,
 `mutation DeleteMutation($id: ID!) {
-  deleteGame(id: $id) {
-    id
-    title
-    platform
-  }
+   deleteGame(id: $id) {
+      id
+      title
+      platform
+   }
 }`
 3. If you want to delete '2', you have to type below input in the **Variables** window
 `{
-  "id": "2"
+   "id": "2"
+}`
+4. Then Run & Enjoy
+
+### How to add single game using mutation? Eg:
+1. Go to the Apollo Sandbox
+2. In the **Operation** window type below,
+`mutation AddMutation($game: AddGameInput!) {
+   addGame(game: $game) {
+      id
+      title
+      platform
+   }
+}`
+3. If you want to add new game, you have to type below input in the **Variables** window
+`{
+   "game": {
+      "title": "A new game",
+      "platform": ["Switch", "PS5"]
+   }
 }`
 4. Then Run & Enjoy
