@@ -14,9 +14,12 @@
 1. Go to the Apollo Sandbox
 2. In the **Operation** window type below,
 `query ExampleQuery($id: ID!) {
-   review(id: $id) {
-     rating,
-     content
+   game(id: $id) {
+      id
+      reviews {
+        rating
+        content
+      }
    }
 }`
 3. If you want to fetch '1', you have to type below input in the **Variables** window
