@@ -1,2 +1,2 @@
-# graphql
-The GraphQL Guide.
+# GraphQL
+The GraphQL is a Query Language.
