@@ -62,3 +62,21 @@
    }
 }`
 4. Then Run & Enjoy
+
+### How to edit single game using mutation? Eg:
+1. Go to the Apollo Sandbox
+2. In the **Operation** window type below,
+`mutation EditMutation($id: ID!, $edits: EditGameInput!) {
+   updateGame(id: $id, edits: $edits) {
+      title
+      platform
+   }
+}`
+3. If you want to update existing game, you have to type below input in the **Variables** window
+`{
+   "id": "2",
+   "edits": {
+      "title":"Lord of the Ring"
+   }
+}`
+4. Then Run & Enjoy
